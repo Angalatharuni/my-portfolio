@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.tab {
+  float: left;
+  border: 1px solid #858383;
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 750px;
+  text-align: center;
+  
+}
+
+div.scroll {
+  
+        width: 200px;
+        height: 750px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;    
+            }
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  float: left;
+  padding: 100px 50px 50px 50px;
+  border: 1px solid #ccc;
+  width: 1000px;
+  border-left: none;
+  height: 800px;
+  background-image: url("https://cutewallpaper.org/21/professional-background-photos/Best-35-IT-Professional-Background-on-HipWallpaper-Good-.jpg");
+  background-repeat:no-repeat;
+  background-size: 1000px 800px;
+  color:white;
+}
+
+
+
+.column {
+  float: left;
+  width: 500px;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  padding-bottom:60px;
+  height:450px;
+  margin:100px;
+  margin-right:100px;
+  margin-bottom: 100px;
+  background-color:rgb(247, 248, 250);
+  border-radius: 50px;
+  color:black
+}
+p{
+    font-size: 25px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <div class="scroll">
+  <br><br>
+ 
+  <br><br>Angala Tharuni<br><br>
+  <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'about')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'contact')">Contact </button>
+  
+</div></div>
+
+<div id="home" class="tabcontent">
+  <br><br>
+  <img src="C:\Users\user\Downloads\my pic.jpeg" style="float: left;" width="200" height="300"/><br><h1 >&ensp; Hello, I'm Angala Tharuni</h1>
+  
+  <b>&ensp;A computer science student passionate about programming and design
+  </b><br><br><br><br><br><br>&ensp;
+</div>
+
+<div id="about" class="tabcontent">
+
+    <h1>About Me</h1>
+    <p font-size:5px; >Hello, I'm Angala Tharuni, a computer science student.I am currently pursuing a Bachelor's degree in Computer Science at Chaitanya Bharathi Institute Of Technology
+        , and I am expected to graduate 2025.<br><br>
+        I've always been fascinated by the ever-evolving world of technology, and my passion for problem-solving
+         and coding led me to pursue a degree in computer science.
+         <br><br>I have a strong background in programming languages such as Python, C, and C++
+         I am known for my strong problem-solving abilities, my passion for collaboration and teamwork, and my dedication to staying updated with the latest trends in technology.
+        <br><br>Resume
+        </p>
+    
+                       <p><a href="C:\Users\user\Documents\resume.pdf">Download</a>
+                       </p>
+    
+
+</div>
+
+
+
+<div id="contact" class="tabcontent">
+    <h1>Contact Me</h1>
+    <div class="column">
+        <a href="https://www.linkedin.com/in/tharuni-angala-2a46a324b"> <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+     </a>
+         </a><br><br><br>
+         <a href="https://github.com/Angalatharuni"> <i class="fa fa-github" style="font-size:36px"></i></a>
+         </a>
+         <h3>email:</h3>
+         <h4>angalatharuni@gmail.com</h4>
+    </div>
+  </div>
+
+
+    
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+  
+</body>
+</html> 
